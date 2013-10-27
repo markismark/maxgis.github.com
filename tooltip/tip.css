@@ -1,0 +1,129 @@
+.confirm_TipContainer{
+	height: 140px;
+	width: 252px;
+	background-color: #F3F3F3;
+	border: 1px solid #659ccf;
+	border-radius:6px;
+	box-shadow:0px 0px 4px #999999;
+	position:fixed;
+}
+.confirm_TipTitle{
+	background-image: url(images/TipTitle.png);
+	height: 33px;
+}
+.tippageload{
+	background-image: url(images/pageLoad.gif);
+	height:81px;
+	width:85px;
+}
+.confirm_TipContent{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	text-align: left;
+	padding:5px;
+	height: 60px;
+	text-shadow:0 1px 0 #FFF;
+}
+.confirm_TipButton{
+	height: 30px;
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 6px;
+}
+.confirm_TipButton input{
+	width:55px;
+	height:25px;
+}
+.confirm_TipContent table,.confirm_TipContent tr{
+	width:100%;
+	height:100%;
+}
+.confirm_type{
+	width:32px;
+	height:32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	float:left;
+}
+.confirm_type_warn{
+	background:url(images/warn.png);
+}
+.confirm_type_error{
+	background:url(images/error.png);
+}
+.confirm_type_help{
+	background:url(images/help.png);
+}
+.confirm_type_right{
+	background:url(images/right.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+.alert_TipContainer{
+	height: 140px;
+	width: 252px;
+	background-color: #F3F3F3;
+	border: 1px solid #659ccf;
+	border-radius:6px;
+	box-shadow:0px 0px 4px #999999;
+	position:fixed;
+}
+.alert_TipTitle{
+	background-image: url(images/TipTitle.png);
+	height: 33px;
+}
+.tippageload{
+	background-image: url(images/pageLoad.gif);
+	height:81px;
+	width:85px;
+}
+.alert_TipContent{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	text-align: left;
+	padding:5px;
+	height: 60px;
+	text-shadow:0 1px 0 #FFF;
+}
+.alert_TipButton{
+	height: 30px;
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 6px;
+}
+.alert_TipButton input{
+	width:55px;
+	height:25px;
+}
+.alert_TipContent table,.alert_TipContent tr{
+	width:100%;
+	height:100%;
+}
+.alert_type{
+	width:32px;
+	height:32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	float:left;
+}
+.alert_type_warn{
+	background:url(images/warn.png);
+}
+.alert_type_error{
+	background:url(images/error.png);
+}
+.alert_type_help{
+	background:url(images/help.png);
+}
+.alert_type_right{
+	background:url(images/right.png);
+}

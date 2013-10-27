@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>_test</title>
+        <meta name="author" content="Administrator" />
+        <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="../tip.js"></script>
+        <link type="text/css" rel="stylesheet" href="../tip.css" />
+        <!-- Date: 2012-03-23 -->
+    </head>
+    <script type="text/javascript">
+		$(function() {
+			$("#init").bind('click', function(event) {
+				$().confirm();
+			});
+			$("#effect1").bind('click', function(event) {
+				$().confirm({
+					effect : "noeffect"
+				});
+			});
+			$("#effect2").bind('click', function(event) {
+				$().confirm({
+					effect : "zhendong"
+				});
+			});
+			$("#effect3").bind('click', function(event) {
+				$().confirm({
+					effect : "fade"
+				});
+			});
+			$("#content").bind('click', function(event) {
+				$().confirm({
+					content : "你确实修改吗"
+				});
+			});
+			$("#bc").bind('click', function(event) {
+				$().confirm({
+					background : "#a4e0a0"
+				});
+
+			});
+			$("#alpha").bind('click', function(event) {
+                $().confirm({
+                    alpha : "0.3"
+                });
+
+            });
+            $("#ishei").bind('click', function(event) {
+                $().confirm({
+                    ishei : false
+                });
+
+            });
+            $("#sure").bind('click', function(event) {
+                $().confirm({
+                    sure : false
+                });
+
+            });
+             $("#cancel").bind('click', function(event) {
+                $().confirm({
+                    cancel : false
+                });
+
+            });
+            $("#surecontent").bind('click', function(event) {
+                $().confirm({
+                    surecontent : "是"
+                });
+
+            });
+             $("#cancelcontent").bind('click', function(event) {
+                $().confirm({
+                    cancelcontent : "否"
+                });
+
+            });
+             $("#type").bind('click', function(event) {
+                $().confirm({
+                    type : "error"
+                });
+
+            });
+            $("#complete").bind('click', function(event) {
+                var c=function(c){
+                    if(c){
+                        alert("你点击的是确定");
+                    }else{
+                        alert("你点击的是取消");
+                    }
+                }
+                $().confirm({
+                    complete : c
+                });
+
+            });
+            $("#diypage").bind('click', function(event) {
+                var options = {};
+                options.url = "pro.html";
+                options.height = "412";
+                options.width = "622";
+                options.id = "userpro";
+                options.moveSelector = ".up_wrapper .top";
+                options.loadComplete = function () {
+                    ppM.init();
+                };
+                $().zhezhao(options);
+
+            });
+		})
+    </script>
+    <style>
+		.testdiv {
+			width: 200px;
+			height: 30px;
+			background: #EDEDED;
+			margin: 10px;
+		}
+    </style>
+    <body>
+        <div class="testdiv" id="init">
+            默认初始化
+        </div>
+        <div class="testdiv" id="effect1">
+            无效果
+        </div>
+        <div class="testdiv" id="effect2">
+            震动
+        </div>
+        <div class="testdiv" id="effect3">
+            透明度
+        </div>
+        <div class="testdiv" id="content">
+            提示内容
+        </div>
+        <div class="testdiv" id="bc">
+            背景颜色
+        </div>
+        <div class="testdiv" id="alpha">
+            背景透明度
+        </div>
+        <div class="testdiv" id="ishei">
+            背景透明度为0
+        </div>
+        <div class="testdiv" id="sure">
+            确定没有了
+        </div>
+        <div class="testdiv" id="cancel">
+            取消没有了
+        </div>
+        <div class="testdiv" id="surecontent">
+            修改确定内容
+        </div>
+        <div class="testdiv" id="cancelcontent">
+            修改取消内容
+        </div>
+        <div class="testdiv" id="type">
+            提示类型,有error,help,warn
+        </div>
+        <div class="testdiv" id="complete">
+            完成事件触发
+        </div>
+		<div class="testdiv" id="diypage">
+            加载自定义页面(WEB容器下执行)
+        </div>
+    </body>
+</html>
